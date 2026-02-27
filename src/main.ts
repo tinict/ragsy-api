@@ -10,12 +10,14 @@ import route from "./Http/Routes";
 import config from '../config';
 import listenSocket from './Socket';
 import { Server } from 'socket.io';
+import * as dotenv from 'dotenv';
 
 const port = config.server.port;
 
 const app = express();
 
 app.use(express.json());
+dotenv.config({ path: './.env' })
 
 // app.use(bodyParser.json());
 // app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,9 +32,9 @@ app.use(helmet({
     crossOriginEmbedderPolicy: false,
     crossOriginResourcePolicy: false,
 }));
-
 app.use(cors());
 app.use(compression());
+
 
 app.use(morgan('dev'));
 
