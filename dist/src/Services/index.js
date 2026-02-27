@@ -16,3 +16,4 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __exportStar(require("./threads.service"), exports);
 __exportStar(require("./messages.service"), exports);
+__exportStar(require("./llamaIndex.service"), exports);

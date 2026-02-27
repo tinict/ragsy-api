@@ -11,6 +11,7 @@ class AppServiceProvider {
     register() {
         this.container.bind(types_1.TYPES.MessageService).to(Services_1.MessageService);
         this.container.bind(types_1.TYPES.ThreadService).to(Services_1.ThreadService);
+        this.container.bind(types_1.TYPES.LlamaIndexService).to(Services_1.LlamaIndexService);
     }
     getContainer() {
         return this.container;

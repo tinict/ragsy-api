@@ -3,5 +3,7 @@ declare const TYPES: {
     MessageController: symbol;
     ThreadService: symbol;
     ThreadController: symbol;
+    LlamaIndexService: symbol;
+    LlamaIndexController: symbol;
 };
 export { TYPES };
