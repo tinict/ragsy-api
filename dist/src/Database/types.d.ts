@@ -5,5 +5,6 @@ declare const TYPES: {
     ThreadController: symbol;
     LlamaIndexService: symbol;
     LlamaIndexController: symbol;
+    PingController: symbol;
 };
 export { TYPES };
