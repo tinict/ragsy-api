@@ -5,6 +5,7 @@ const TYPES = {
     ThreadController: Symbol.for('ThreadController'),
     LlamaIndexService: Symbol.for('LlamaIndexService'),
     LlamaIndexController: Symbol.for('LlamaIndexController'),
+    PingController: Symbol.for('PingController'),
 };
 
 export { TYPES };

@@ -2,6 +2,7 @@ import { Express } from 'express';
 import threadRoute from './api/v1/thread.route';
 import messageRoute from './api/v1/message.route';
 import llamaIndexRoute from './api/v1/llamaIndex.route';
+import pingRoute from './api/v1/ping.route';
 
 export default function route (app: Express) {
     const root = '/api';
@@ -9,5 +10,6 @@ export default function route (app: Express) {
     app.use(root, threadRoute);
     app.use(root, messageRoute);
     app.use(root, llamaIndexRoute)
+    app.use(root, pingRoute)
 };
                                                               
